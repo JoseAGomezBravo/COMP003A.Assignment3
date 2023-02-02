@@ -15,20 +15,32 @@ namespace COMP003A.Assignment3
             string numericgrade = Console.ReadLine();
             double numericGrade = Convert.ToDouble(numericgrade);
 
-            if (numericGrade >= 0)
-            if (numericGrade <= 100)
-                    Console.ForegroundColor = ConsoleColor.White;
+            if (numericGrade >= 0 && numericGrade <= 100)
             {
                 if (numericGrade >= 90)
+                {
                     Console.WriteLine("Letter Grade: A");
+                }
                 else if (numericGrade >= 80)
+                {
                     Console.WriteLine("Letter Grade: B");
+                }
                 else if (numericGrade >= 70)
+                {
                     Console.WriteLine("Letter Grade: C");
+                }
                 else if (numericGrade >= 60)
+                {
                     Console.WriteLine("Letter Grade: D");
+                }
                 else
+                {
                     Console.WriteLine("Letter Grade: F");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input!");
             }
             
             
